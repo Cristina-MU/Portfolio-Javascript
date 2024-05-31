@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="imgs/miniicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+  <title>Portfolio</title>
+
+</head>
+
+<body id="body"> 
+  <!-- header con enlaces a las partes del main -->
+  <header class="header"> 
+    <div class="logo">
+      <img src="logoIcono/logoNegro.png" alt="logo en negro">
+    </div>
+    <div class="logo2">
+      <img src="logoIcono/logoBlanco.png" alt="logo en blanco">
+    </div>
+    <nav class="menu">
+      <a href="#home">HOME</a>
+      <a href="#projects">PROJECTS</a>
+      <a href="#aboutme">ABOUT ME</a>
+      <a href="#contact">CONTACT</a>
+    </nav>
+    <button id="modeToggle" class="btn">Light Mode</button>
+  </header>
+
+  <main>
+    <section class="Home" id="banner">
+      <div class="btn-pause" id="btnPause">
+        <i class="icon-pause"><img src="logoIcono/pausaWhite.png" alt="Icono de pausa" height="40px"></i>
+      </div>
+      <video loop muted autoplay preload="auto" id="video">
+        <source src="MontañasNevadas.mp4">
+      </video>
+      <video loop muted autoplay preload="auto" id="video2">
+        <source src="AuroraBoreal.mp4">
+      </video>
+      <div class="content">
+        <h1>Where Every Pixel Tells a Story</h1>
+        <h2>I'm Cristina, web developer</h2>
+        <p>Learn more about what I do</p>
+      </div>
+    </section>
+    
+    <section class="Projects" id="projects">
+      <div class="card">
+        <img src="imgs/dron2.jpeg" alt="Descripción de la imagen" class="card__image">
+        <div class="card__content">
+          <p class="card__title">Dronetech</p>
+          <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+          <p><a target="_blank" class="boton" href="https://www.freecodecamp.org/">see more</a></p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="imgs/halloween.jpeg" alt="Descripción de la imagen" class="card__image">
+        <div class="card__content">
+          <p class="card__title">Halloween Webside</p>
+          <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+          <p><a target="_blank" class="boton" href="https://www.freecodecamp.org/">see more</a></p> 
+        </div>
+      </div>
+      <div class="card">
+        <img src="imgs/youtube.jpeg" alt="Descripción de la imagen" class="card__image">
+        <div class="card__content">
+          <p class="card__title">YouTube</p>
+          <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+          <p><a target="_blank" class="boton" href="https://www.freecodecamp.org/">see more</a></p> 
+        </div>
+      </div>
+      <div class="card">
+        <img src="imgs/google.jpeg" alt="Descripción de la imagen" class="card__image">
+        <div class="card__content">
+          <p class="card__title">Google</p>
+          <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+          <p><a target="_blank" class="boton" href="https://www.freecodecamp.org/">see more</a></p> 
+        </div>
+      </div>
+    </section>
+              
+    <!-- parte sobre mi  -->
+    <section class="AboutMe" id="aboutme">
+      <div class="div1">
+        <div class="hover-text"> Front-end Developer</div>
+      </div>
+      <div class="div2">
+        <div class="hover-text">
+          <p>Technologies: HTML, CSS, JAVASCRIPT & PHP</p>
+        </div>
+      </div>
+      <div class="div3">
+        <div class="hover-text">Design</div>
+      </div>
+      <div class="div4">
+        <div class="hover-text">Perfil</div>
+      </div>
+      <div class="div5">
+        <p class="text1">Cristina Moreno</p>
+        <p>cristina.moreno.urban@gmail.com</p>
+        <p class="text1">662948457</p>
+      </div>
+      <div class="div6">
+        <p>I am 27 years old and I am a sportswoman and programmer. I have participated in the creation of the websites Halloween, Dronetech as a programmer, YouTube and Google as a web designer.</p>
+      </div>
+      <div class="div7">
+        <div class="hover-text">Paddle-surf</div>
+      </div>
+      <div class="div8">
+        <div class="hover-text">My hobbies</div>
+      </div>
+      <div class="div9">
+        <div class="hover-text">Draw</div>
+      </div>
+    </section>
+
+    <!-- formulario de contacto  -->
+    <section class="Contact" id="contact">
+      <form>
+        <h2>Let's chat</h2>
+        <label for="fname">Name:</label>
+        <input type="text" id="fname" name="firstname">
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email">
+        <label for="subject">Asunto:</label>
+        <textarea id="subject" name="subject" placeholder="Message.." style="height:100px"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+      <p>2024 Cristina Moreno | Home • Projects • About me • Contact</p>
+    </section>
+  </main>
+</body>
+</html>
